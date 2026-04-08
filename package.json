@@ -1,8 +1,8 @@
 {
   "name": "reviewmate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ReviewMate AI-powered code review backend",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -13,17 +13,20 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.85.0",
     "@octokit/rest": "^22.0.1",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
-    "openai": "^6.33.0"
+    "openai": "^6.33.0",
+    "typescript": "^6.0.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.2",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.2"
+    "tsx": "^4.21.0"
   }
 }
